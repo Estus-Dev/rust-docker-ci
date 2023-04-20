@@ -2,7 +2,7 @@
 
 [![Dockerhub Badge][]][Dockerhub] [![Github Badge][]][Github]
 
-This is an image created to minimize CI build/test times for rust projects by caching the tools previously installed during the CI process.
+This is an image created to minimize Gitlab CI build/test times for rust projects by caching the tools previously installed during the CI process.
 
 ## Included Tools
 
