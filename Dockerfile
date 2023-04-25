@@ -13,3 +13,8 @@ RUN rustup component add rustfmt
 RUN cargo install cargo-tarpaulin
 RUN cargo install cargo-audit
 
+# Setup WASM target
+RUN rustup target install wasm32-unknown-unknown
+
+# Install bindgen from cargo
+RUN cargo install wasm-bindgen-cli
