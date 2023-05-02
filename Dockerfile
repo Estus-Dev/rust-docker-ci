@@ -13,3 +13,5 @@ RUN rustup component add rustfmt
 RUN cargo install cargo-tarpaulin
 RUN cargo install cargo-audit
 
+# Install sqlx from cargo
+RUN cargo install --version="~0.6" sqlx-cli --no-default-features --features rustls,postgres
