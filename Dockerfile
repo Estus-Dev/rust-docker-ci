@@ -1,8 +1,8 @@
 FROM rust:latest
 
-# Install alternative linker
+# Install alternative linker and psql
 RUN apt update \
-    && apt install lld clang -y \
+    && apt install lld clang postgresql-client -y \
     && rm -rf /var/lib/apt/lists/*;
 
 # Install linting and formatting support from rustup
