@@ -17,7 +17,7 @@ RUN cargo install cargo-audit
 RUN rustup target install wasm32-unknown-unknown
 
 # Install bindgen from cargo
-RUN cargo install wasm-bindgen-cli --version 0.2.84
+RUN cargo install -f wasm-bindgen-cli --version 0.2.84
 
 # Install trunk from cargo
 RUN cargo install trunk
